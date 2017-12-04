@@ -17,25 +17,12 @@ a {
   text-decoration: none; /* no underline */
 }
 
-.ad {
-  width: auto;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  bottom: 0px;
-  left: 0px;
-  right: 83%;
-  overflow: visible;
-  display: block;
-  float: none;
-  z-index: auto;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
+.mobile-links {
+  width: 0px;
+  height: 0px;
+  bottom: -1000px;
+  right: -1000px;
   position: fixed;
-  opacity: 1;
-  cursor: default;
-  background-color: #2f3136;
 }
 
 .register {
@@ -410,3 +397,79 @@ img {
     5% {-webkit-transform: rotate(0deg);}
     100% {-webkit-transform: rotate(0deg);}
 } 
+
+/* mobile */
+@media screen and (max-width: 768px){
+  .register {
+    width: 0px;
+    height: 0px;
+    bottom: -1000px;
+    right: -1000px;
+    position: fixed;    
+  }
+  .register-header {
+    width: 0px;
+    height: 0px;
+    bottom: -1000px;
+    right: -1000px;
+    position: fixed;
+  }
+  .widget {
+    width: 0px;
+    height: 0px;
+    bottom: -1000px;
+    right: -1000px;
+    position: fixed;    
+  }
+  .index {
+    width: 0px;
+    height: 0px;
+    bottom: -1000px;
+    right: -1000px;
+    position: fixed;    
+  }
+  .index-header {
+    width: 0px;
+    height: 0px;
+    bottom: -1000px;
+    right: -1000px;
+    position: fixed;    
+  }
+  .index-txt {
+    width: 0px;
+    height: 0px;
+    bottom: -1000px;
+    right: -1000px;
+    position: fixed;    
+  }
+  .recent-header {
+    width: 0px;
+    height: 0px;
+    bottom: -1000px;
+    right: -1000px;
+    position: fixed;    
+  }
+  .recent-txt {
+    width: 0px;
+    height: 0px;
+    bottom: -1000px;
+    right: -1000px;
+    position: fixed;    
+  }
+  .cmds {
+    left: 0px;
+    right: 0px;
+  }
+  .mobile-links {
+    width: auto;
+    height: auto;
+    top: 0px;
+    left: 10px;
+    position: relative;
+    font: normal 10px/normal Verdana, Geneva, sans-serif;
+    font-weight: bold;    
+    color: rgba(186, 187, 189, 1);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+  }
+}
