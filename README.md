@@ -2,6 +2,8 @@
 Documentation Page, which explains how to use my Discord Bot's commands or configure settings.
 Offical Site: http://triple-cube.xyz/docs
 
+Site also offers a mobile version for better performance on phones and tablets.
+
 You can use this documentation for whatever you want and edit and recode it as much as you need.
 You can credit me, but you don't have to.
 Just, please don't claim it as your own creation.
