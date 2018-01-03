@@ -313,6 +313,20 @@ a {
   text-decoration: underline;
 }
 
+.title-modules {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  font: normal 35px/1 Arial, Helvetica, sans-serif;
+  color: rgba(255,102,0,1);
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-shadow: 4px 0 9px rgba(255,102,0,1) ;
+  margin: 40px 0 20px 50px;
+  text-decoration: underline;
+}
+
 .cmd {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
