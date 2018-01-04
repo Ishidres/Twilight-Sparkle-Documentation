@@ -37,6 +37,7 @@
 
       <div class="recent-header"><u>Recent Changes:</u></div>
       <div class="recent-txt">
+        - addrole / delrole / ranks added<br>
         - set-radio-voicechannel added<br>
         - lucky-tower added<br>
         - set-dm-join-msg added<br>
@@ -119,6 +120,18 @@
       <div class="cmd">say &#60;text&#62;</div>
       <div class="p">Lets the bot say something. (Requires: Manage Messages Permission)</div class="p">
 
+      <div class="cmd">stats [@user]</div>
+      <div class="p">Shows all saved stats for a specific user like: Online Time, Global Bans, Global Warnings, ...</div>
+
+      <div class="cmd">roleme</div>
+      <div class="p">Makes you join a rank, which gives you a specific role added by an Admin.</div class="p">
+
+      <div class="cmd">unroleme</div>
+      <div class="p">Makes you leave a rank, which removes the specific role from you.</div class="p">
+
+      <div class="cmd">ranks</div>
+      <div class="p">Shows all joinable ranks. Joining a rank will give you a specific role.</div class="p">
+
       <div class="cmd">warnings/warns [@user]</div>
       <div class="p">Shows all the saved warnings for a specific user.</div class="p">
 
@@ -130,9 +143,6 @@
 
       <div class="cmd">mlp-episode/ep &#60;S3E5&#62;</div>
       <div class="p">Searches for a specific MLP Episode by the given season and episode number.</div>  
-
-      <div class="cmd">stats [@user]</div>
-      <div class="p">Shows all saved stats for a specific user like: Online Time, Global Bans, Global Warnings, ...</div>
 
       <div class="cmd">weather &#60;City / ZIP Code&#62;</div>
       <div class="p">Shows the weather and other information of the given location (City / ZIP Code).</div>
@@ -247,6 +257,12 @@
       <div class="title-administration" id="administration">5. Setup / Configuration</div>    
 
 
+      <div class="cmd">addrank/addrole &#60;rank name&#62;</div>
+      <div class="p">Adds a new rank, which lets users get a specific role by executing a command. Example: A rank called No NSFW, which gives users a role with which they can't view any NSFW channels anymore. (Requires: Administrator Permission)</div class="p">
+
+      <div class="cmd">delrank/delrole &#60;rank name&#62;</div>
+      <div class="p">Deletes an already set up rank, without deleting the role it was connected to. (Requires: Administrator Permission)</div class="p">  
+
       <div class="cmd">set-radio-voicechannel / radio-vc</div>
       <div class="p">Enables 24/7 Newground Music / Radio in the voice channel you are connected to when executing the command. Add "disable" behind the command to disable it. (Requires: Administrator Permission)</div>
 
@@ -320,9 +336,6 @@
       <div class="cmd">list-disabled-modules</div>
       <div class="p">Shows all disabled modules.</div>
 
-      <div class="cmd">list-disabled-modules</div>
-      <div class="p">Shows all disabled modules.</div>
     </div>
-    
   </body>
 </html>
