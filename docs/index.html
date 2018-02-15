@@ -38,6 +38,9 @@
 
       <div class="recent-header"><u>Recent Changes:</u></div>
       <div class="recent-txt">
+        - trade commands added<br>
+        - vote command added<br>
+        - disable / enable channels command added<br>
         - disable / enable commands added<br>
         - addrole / delrole / ranks added<br>
         - disable / enable modules added
@@ -168,6 +171,9 @@
       <div class="cmd">join</div>  
       <div class="p">Shows you the invite link to the support server, which you can join, either to get support or to help us grow.</div>  
 
+      <div class="cmd">vote</div>
+      <div class="p">Explains which rewards you get for voting and how to vote for the bot.</div>
+
       <div class="cmd">afk</div>  
       <div class="p">Moves you from your current voice channel to the AFK channel. Only works if the user is already in a voice channel and an AFK Channel is set for the server.</div>  
 
@@ -200,6 +206,15 @@
 
       <div class="cmd">items [@user]</div>
       <div class="p">Shows all your or someone other's items and the item's rating in the inventory.</div class="p">
+
+      <div class="cmd">,trade &#60;@user&#62; &#60;:item_as_emoji:&#62; &#60;monetary amount as number&#62;</div>
+      <div class="p">Begins a new trade offer with a specific user. To understand how to trade with users, run this command without any arguments.</div class="p">
+
+      <div class="cmd">,trade-accept</div>
+      <div class="p">Accepts an open trade offer with a specific user.</div class="p">
+
+      <div class="cmd">,trade-cancel</div>
+      <div class="p">Cancels an open trade.</div class="p">
 
       <div class="cmd">health [@user]</div>
       <div class="p">Shows the user's or someone other's HP.</div class="p">  
@@ -347,6 +362,15 @@
 
       <div class="cmd">list-disabled-commands</div>
       <div class="p">Shows all disabled commands. (Requires: Administrator Permission)</div>
+
+      <div class="cmd">disable-channel</div>
+      <div class="p">Disables a channel. Twilight will not react on user commands in disabled channels anymore. Also users won't gain any money or experience in these channels anymore. (Requires: Administrator Permission)</div>
+
+      <div class="cmd">enable-channel</div>
+      <div class="p">Enables a disabled channel. (Requires: Administrator Permission)</div>
+
+      <div class="cmd">list-disabled-channels</div>
+      <div class="p">Shows all disabled channels. (Requires: Administrator Permission)</div>
 
     </div>
   </body>
