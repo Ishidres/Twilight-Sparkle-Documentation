@@ -38,6 +38,8 @@
 
       <div class="recent-header"><u>Recent Changes:</u></div>
       <div class="recent-txt">
+        - updated clear command description
+        - added set-logs-channel<br>
         - updated leaderboard command description<br>
         - updated meme command description<br>
         - added better meme command description<br>
@@ -272,8 +274,8 @@
       <div class="cmd">delete-warnings &#60;user&#62;</div>
       <div class="p">Deletes all the saved warnings of a specific user.</div class="p">
 
-      <div class="cmd">clear [@user] &#60;amount (2-10000)&#62;</div>
-      <div class="p">Deletes a specific amount of messages (max.: 10000) from every user or just a specific user in the channel. (Required Permission: Administrator)</div class="p">
+      <div class="cmd">clear [@user] &#60;amount (2-1000)&#62;</div>
+      <div class="p">Deletes a specific amount of messages (max.: 1000) from every user or just a specific user in the channel. (Required Permission: Administrator)</div class="p">
 
 
       <div class="title-administration" id="administration">5. Setup / Configuration</div>    
@@ -345,6 +347,9 @@
       <div class="cmd">automated-messages/auto-msg &#60;enable / disable&#62;</div>
       <div class="p">Disables or enables automated messages. If disabled those messages won't be sent anymore: Achievement Messages, Level-Up Messages and Auto-Role Notifications. (Requires: Administrator Permission)</div>
     
+      <div class="cmd">set-logs-channels</div>
+      <div class="p">Enables Server Logs in the current channel. Twilight will start logging important Events such as Bans, Kicks, Warnings, Cleares, etc. Use '-1' or 'disable' as the first argument to disable Server Logs. (Requires: Administrator Permission)</div>
+
 
       <div class="title-modules" id="modules">6. Modules / Command Setup</div>    
 
