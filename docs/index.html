@@ -38,6 +38,7 @@
 
       <div class="recent-header"><u>Recent Changes:</u></div>
       <div class="recent-txt">
+        - added nickname-blacklist commands<br>
         - edited set-logs-channel command<br>
         - added mute/unmute command<br>
         - edited clear command description<br>
@@ -357,6 +358,15 @@
       <div class="cmd">line-breaks-limit &#60;limit&#62;</div>
       <div class="p">Sets the maximum amount of line breaks in one message for the server (-1 to disable). This feature can be used to prevent people from spamming messages with a lot of line breaks. (Required Permission: Administrator) (Bypass Permission: Manage Messages)</div>
     
+      <div class="cmd">nickname-blacklist-add</div>
+      <div class="p">Adds a word to the Nickname Blacklist. If a user changes their nickname and a blacklisted word is part of their new nickname, the bot will reset the nickname to their default username (ignores case sensitive). (Requires: Administrator Permission)</div class="p">
+
+      <div class="cmd">nickname-blacklist-remove</div>
+      <div class="p">Adds a word to the Nickname Blacklist. If a user changes their nickname and a blacklisted word is part of their new nickname, the bot will reset the nickname to their default username (ignores case sensitive). (Requires: Administrator Permission)</div class="p">
+
+      <div class="cmd">set-announce-channel</div>
+      <div class="p">Lists all words which are part of the Nickname Blacklist. (Requires: Administrator Permission)</div class="p">
+
       <div class="cmd">automated-messages/auto-msg &#60;enable / disable&#62;</div>
       <div class="p">Disables or enables automated messages. If disabled those messages won't be sent anymore: Achievement Messages, Level-Up Messages and Auto-Role Notifications. (Requires: Administrator Permission)</div>
     
