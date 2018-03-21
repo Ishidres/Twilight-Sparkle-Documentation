@@ -38,6 +38,7 @@
 
       <div class="recent-header"><u>Recent Changes:</u></div>
       <div class="recent-txt">
+        - fixed a few command descriptions<br>
         - added package.json<br>
         - added sell-item command<br>
         - added nickname-blacklist commands<br>
@@ -363,10 +364,10 @@
       <div class="cmd">line-breaks-limit &#60;limit&#62;</div>
       <div class="p">Sets the maximum amount of line breaks in one message for the server (-1 to disable). This feature can be used to prevent people from spamming messages with a lot of line breaks. (Required Permission: Administrator) (Bypass Permission: Manage Messages)</div>
     
-      <div class="cmd">nickname-blacklist-add</div>
+      <div class="cmd">nickname-blacklist-add &#60;word&#62;</div>
       <div class="p">Adds a word to the Nickname Blacklist. If a user changes their nickname and a blacklisted word is part of their new nickname, the bot will reset the nickname to their default username (ignores case sensitive). (Requires: Administrator Permission)</div class="p">
 
-      <div class="cmd">nickname-blacklist-remove</div>
+      <div class="cmd">nickname-blacklist-remove &#60;word&#62;</div>
       <div class="p">Adds a word to the Nickname Blacklist. If a user changes their nickname and a blacklisted word is part of their new nickname, the bot will reset the nickname to their default username (ignores case sensitive). (Requires: Administrator Permission)</div class="p">
 
       <div class="cmd">set-announce-channel</div>
@@ -382,28 +383,28 @@
       <div class="title-modules" id="modules">6. Modules / Command Setup</div>    
 
       
-      <div class="cmd">disable-module</div>
+      <div class="cmd">disable-module &#60;module&#62;</div>
       <div class="p">Disables a module. If a module is disabled no commands connected with this module will work anymore. Also things like Random Drop Events won't appear anymore if the RPG module is disabled. Run command without any argument to see which modules can be disabled. (Requires: Administrator Permission)</div>
 
-      <div class="cmd">enable-module</div>
+      <div class="cmd">enable-module &#60;module&#62;</div>
       <div class="p">Enables a disabled module. After this commands and other things connected with this module wil work again. (Requires: Administrator Permission)</div>
 
       <div class="cmd">list-disabled-modules</div>
       <div class="p">Shows all disabled modules. (Requires: Administrator Permission)</div>
 
-      <div class="cmd">disable-command</div>
+      <div class="cmd">disable-command &#60;command&#62;</div>
       <div class="p">Disables a command for the whole server so nobody can use it anymore. Help command and every Admin Setup can't be disabled. (Requires: Administrator Permission)</div>
 
-      <div class="cmd">enable-command</div>
+      <div class="cmd">enable-command &#60;command&#62;</div>
       <div class="p">Enables a disabled command. Best way to enable disabled commands is to use ,list-disabled-commands, pick the command and enable it. (Requires: Administrator Permission)</div>
 
       <div class="cmd">list-disabled-commands</div>
       <div class="p">Shows all disabled commands. (Requires: Administrator Permission)</div>
 
-      <div class="cmd">disable-channel</div>
+      <div class="cmd">disable-channel &#60;#channel&#62;</div>
       <div class="p">Disables a channel. Twilight will not react on user commands in disabled channels anymore. Also users won't gain any money or experience in these channels anymore. (Requires: Administrator Permission)</div>
 
-      <div class="cmd">enable-channel</div>
+      <div class="cmd">enable-channel &#60;#channel&#62;</div>
       <div class="p">Enables a disabled channel. (Requires: Administrator Permission)</div>
 
       <div class="cmd">list-disabled-channels</div>
