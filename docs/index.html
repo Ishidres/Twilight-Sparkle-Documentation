@@ -143,10 +143,10 @@
       <div class="cmd">stats [@user]</div>
       <div class="p">Shows all saved stats for a specific user like: Online Time, Global Bans, Global Warnings, ...</div>
 
-      <div class="cmd">roleme</div>
+      <div class="cmd">roleme &#60;rank&#62;</div>
       <div class="p">Makes you join a rank, which gives you a specific role added by an Admin.</div class="p">
 
-      <div class="cmd">unroleme</div>
+      <div class="cmd">unroleme &#60;rank name&#62;</div>
       <div class="p">Makes you leave a rank, which removes the specific role from you.</div class="p">
 
       <div class="cmd">ranks</div>
@@ -307,13 +307,13 @@
       <div class="cmd">set-radio-voicechannel / radio-vc</div>
       <div class="p">Enables 24/7 Newground Music / Radio in the voice channel you are connected to when executing the command. Add "disable" behind the command to disable it. (Requires: Administrator Permission)</div>
 
-      <div class="cmd">set-dm-join-msg</div>
+      <div class="cmd">set-dm-join-msg &#60;msg&#62;</div>
       <div class="p">Sends a specific message to the user in DM which just joined the server! Usable tags are: {username} {user mention} {server name} {member count}, which are getting replaced by their respective value. Set the message to -1 to disable sending it. (Requires: Administrator Permission)</div class="p">
 
-      <div class="cmd">set-join-msg</div>
+      <div class="cmd">set-join-msg &#60;msg&#62;</div>
       <div class="p">Sends a specific message to the current channel with an awesome gif when a user joins the server! Usable tags are: {username} {user mention} {server name} {member count}, which are getting replaced by their respective value. Set the message to -1 to disable sending it. (Requires: Administrator Permission)</div class="p">
 
-      <div class="cmd">set-leave-msg</div>
+      <div class="cmd">set-leave-msg &#60;msg&#62;</div>
       <div class="p">Sends a specific message to the current channel when a user leaves the server! Usable tags are: {username} {user mention} {server name} {member count}, which are getting replaced by their respective value. Set the message to -1 to disable sending it. (Requires: Administrator Permission)</div class="p">
 
       <div class="cmd">auto-role/ar &#60;@role / -1&#62;</div>
@@ -370,13 +370,13 @@
       <div class="cmd">nickname-blacklist-remove &#60;word&#62;</div>
       <div class="p">Adds a word to the Nickname Blacklist. If a user changes their nickname and a blacklisted word is part of their new nickname, the bot will reset the nickname to their default username (ignores case sensitive). (Requires: Administrator Permission)</div class="p">
 
-      <div class="cmd">set-announce-channel</div>
+      <div class="cmd">list-nickname-blacklist</div>
       <div class="p">Lists all words which are part of the Nickname Blacklist. (Requires: Administrator Permission)</div class="p">
 
       <div class="cmd">automated-messages/auto-msg &#60;enable / disable&#62;</div>
       <div class="p">Disables or enables automated messages. If disabled those messages won't be sent anymore: Achievement Messages, Level-Up Messages and Auto-Role Notifications. (Requires: Administrator Permission)</div>
     
-      <div class="cmd">set-logs-channel</div>
+      <div class="cmd">set-logs-channel [-1]</div>
       <div class="p">Enables Server Logs in the current channel. Twilight will start logging important Events such as Bans, Kicks, Warnings, Cleares, etc. Use '-1' or 'disable' as the first argument to disable Server Logs. (Requires: Administrator Permission)</div>
 
 
