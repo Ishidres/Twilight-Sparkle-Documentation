@@ -10,7 +10,7 @@ Just, please don't claim it as your own creation.
 
 Want to use my Discord Bot? You can invite it [here](https://triple-cube.xyz/invite).
 
-![Screenshot of the Docs Page](https://raw.githubusercontent.com/Ishidres/Twilight-Sparkle-Documentation/branch/docs/img/Screenshot.png)
+![Screenshot of the Docs Page](https://triple-cube.xyz/images/Screenshot.png)
 
 # Examples
 
