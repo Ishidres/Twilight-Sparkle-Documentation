@@ -18,11 +18,7 @@ a {
 }
 
 .mobile-links {
-  width: 0px;
-  height: 0px;
-  bottom: -1000px;
-  right: -1000px;
-  position: fixed;
+  display: none;
 }
 
 .register {
@@ -469,72 +465,42 @@ img {
     max-width: 100%;
     overflow-x: hidden;
   }
-  .register {
-    width: 0px;
-    height: 0px;
-    bottom: -1000px;
-    right: -1000px;
-    position: fixed;    
-  }
-  .register-header {
-    width: 0px;
-    height: 0px;
-    bottom: -1000px;
-    right: -1000px;
-    position: fixed;
-  }
-  .widget {
-    width: 0px;
-    height: 0px;
-    bottom: -1000px;
-    right: -1000px;
-    position: fixed;    
-  }
-  .index {
-    width: 0px;
-    height: 0px;
-    bottom: -1000px;
-    right: -1000px;
-    position: fixed;    
-  }
-  .index-header {
-    width: 0px;
-    height: 0px;
-    bottom: -1000px;
-    right: -1000px;
-    position: fixed;    
-  }
-  .index-txt {
-    width: 0px;
-    height: 0px;
-    bottom: -1000px;
-    right: -1000px;
-    position: fixed;    
-  }
-  .recent-header {
-    width: 0px;
-    height: 0px;
-    bottom: -1000px;
-    right: -1000px;
-    position: fixed;    
-  }
-  .recent-txt {
-    width: 0px;
-    height: 0px;
-    bottom: -1000px;
-    right: -1000px;
-    position: fixed;    
-  }
-  .heading-github {
-    width: 0px;
-    height: 0px;
-    bottom: -1000px;
-    right: -1000px;
-    position: fixed;  
-  }
   .cmds {
     left: 0px;
     right: 0px;
+    top: 0px;    
+  }
+  .cmd {
+    margin: 20px 0 5px 30px;
+    font: normal 20px/1 "Courier New", Courier, monospace;    
+  }
+  .p {
+    margin: 0px 10px 5px 45px;
+    font: normal 17px/normal Verdana, Geneva, sans-serif;    
+  }
+  .title-regular {
+    margin: 40px 0 20px 15px;
+    font: normal 25px/1 Arial, Helvetica, sans-serif;    
+  }
+  .title-nsfw {
+    margin: 40px 0 20px 15px;
+    font: normal 25px/1 Arial, Helvetica, sans-serif;        
+  }
+  .title-rpg {
+    margin: 40px 0 20px 15px;
+    font: normal 25px/1 Arial, Helvetica, sans-serif;        
+  }
+  .title-moderation {
+    margin: 40px 0 20px 15px;
+    font: normal 25px/1 Arial, Helvetica, sans-serif;        
+  }
+  .title-administration {
+    margin: 40px 0 20px 15px;
+    font: normal 25px/1 Arial, Helvetica, sans-serif;        
+  }
+  .title-modules {
+    margin: 40px 0 20px 15px;
+    font: normal 25px/1 Arial, Helvetica, sans-serif;
   }
   .mobile-links {
     width: auto;
@@ -549,4 +515,15 @@ img {
     text-overflow: clip;
     text-align: center;      
   }
+  
+  .remove-on-mobile {display: none;}
+  .register {display: none;}
+  .register-header {display: none;}
+  .widget {display: none;}
+  .index {display: none;}
+  .index-header {display: none;}
+  .index-txt {display: none;}
+  .recent-header {display: none;}
+  .recent-txt { display: none;}
+  .heading-github {display: none;}
 }

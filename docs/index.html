@@ -29,7 +29,7 @@
 </head>
 
 <body>
-  <div class="navbar">
+  <div class="navbar remove-on-mobile">
     <a href="https://triple-cube.xyz/">Home</a>
     <a class="active" href="https://triple-cube.xyz/docs">Docs</a>
     <a href="https://triple-cube.xyz/leaderboard">Leaderboard</a>
@@ -119,7 +119,11 @@
   </div>
 
   <div class="widget">
-    <iframe src="https://discordapp.com/widget?id=221339079554498561&theme=dark" width="100%" height="46%" allowtransparency="true" frameborder="0"></iframe>
+    <script>
+      if (screen && screen.width > 768) {
+        document.write('<iframe src="https://discordapp.com/widget?id=221339079554498561&theme=dark" width="100%" height="46%" allowtransparency="true" frameborder="0"></iframe>');
+      }
+    </script>
     
     <div class="circle"></div>
 
@@ -136,14 +140,14 @@
     </div>
     <div class="heading"><img src="img/heading.png">
       <div class="heading-github">
-        <a href="https://discordbots.org/bot/349966335352242187" >
-          <img src="https://discordbots.org/api/widget/status/349966335352242187.svg" alt="Discord Music Bot" />
+        <a href="https://discordbots.org/bot/349966335352242187">
+          <img src="https://discordbots.org/api/widget/status/349966335352242187.svg" media="only screen and (max-device-width: 768px)"/>
         </a>
         <br> <a href="https://discordbots.org/bot/349966335352242187" >
-          <img src="https://discordbots.org/api/widget/servers/349966335352242187.svg" alt="Discord Music Bot" />
+          <img src="https://discordbots.org/api/widget/servers/349966335352242187.svg" media="only screen and (max-device-width: 768px)"/>
         </a>
         <br> <a href="https://discordbots.org/bot/349966335352242187">
-          <img src="https://discordbots.org/api/widget/upvotes/349966335352242187.svg" alt="Discord Bots" />
+          <img src="https://discordbots.org/api/widget/upvotes/349966335352242187.svg" media="only screen and (max-device-width: 768px)"/>
         </a><br>
         <br> <a class="github-button" href="https://github.com/Ishidres" data-size="large" data-show-count="true" aria-label="Follow @Ishidres on GitHub">Follow @Ishidres</a>
         <br> <a class="github-button" href="https://github.com/Ishidres/Twilight-Sparkle-Documentation" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star on GitHub">Star</a>
@@ -154,8 +158,8 @@
     <div class="p">Default Prefix: <span class="cmd-dark">,</span> </div>  
     <div class="p">Required Argument: <span class="cmd-dark">&#60;arg&#62;</span> </div>
     <div class="p">Optional Argument: <span class="cmd-dark">[arg]</span> </div>
-    <div class="p">Mentions can be replaced through a username, a username and a tag or a valid user id:</div>
-    <div class="p">,profile @Ishidres#1666 / Ishidres#1666 / Ishidres / 213248328035467264</div>
+    <div class="p remove-on-mobile">Mentions can be replaced through a username, a username and a tag or a valid user id:</div>
+    <div class="p remove-on-mobile">,profile @Ishidres#1666 / Ishidres#1666 / Ishidres / 213248328035467264</div>
 
 
     <div class="title-regular" id="regular">1. Regular Commands</div>
