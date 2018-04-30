@@ -1,6 +1,6 @@
 {
   "name": "twilight-sparkle-documentation",
-  "version": "2.30.33",
+  "version": "2.30.40",
   "description": " Public Documentation Page, which explains how to use my Discord Bot's commands or configure settings.",
   "main": "index.html",
   "scripts": {
