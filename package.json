@@ -1,6 +1,6 @@
 {
   "name": "twilight-sparkle-documentation",
-  "version": "2.30.46",
+  "version": "2.30.50",
   "description": " Public Documentation Page, which explains how to use my Discord Bot's commands or configure settings.",
   "main": "index.html",
   "scripts": {
@@ -24,7 +24,7 @@
     "Music",
     "Achievements"
   ],
-  "author": "Ishidres / Ishidres#1666 / ishidres.triple-cube.xyz",
+  "author": "Ishidres / Ishidres#1666 / ishidres.twilightbot.eu",
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
     "url": "https://github.com/Ishidres/Twilight-Sparkle-Documentation/issues"

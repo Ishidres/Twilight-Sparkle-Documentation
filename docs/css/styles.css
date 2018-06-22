@@ -18,7 +18,9 @@ a {
 }
 
 .mobile-links {
-  display: none;
+  bottom: -10px;
+  right: -10px;
+  position: fixed;
 }
 
 .register {
@@ -256,7 +258,7 @@ a {
   text-overflow: ellipsis;
   letter-spacing: 2px;
   text-shadow: 0 0 9px rgba(199,157,215,1) ;
-  margin: 10px 0 15px 25px;
+  margin: 15px 0 15px 25px;
   text-decoration: underline;
 }
 .heading-github {
@@ -313,6 +315,20 @@ a {
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   text-shadow: 4px 0 9px rgba(20,255,20,1) ;
+  margin: 40px 0 20px 50px;
+  text-decoration: underline;
+}
+
+.title-auto-moderation {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  font: normal 35px/1 Arial, Helvetica, sans-serif;
+  color: rgb(153,50,204);
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-shadow: 4px 0 9px rgb(153,50,204);
   margin: 40px 0 20px 50px;
   text-decoration: underline;
 }
@@ -395,7 +411,7 @@ img {
 .circle{
   margin: 0 auto;
   margin-top:10px;
-  background-image:url('https://triple-cube.xyz/images/Twilight-Small.png');
+  background-image:url('https://twilightbot.eu/images/Twilight-Small.png');
   background-size: 100% 100%;
   background-position:center;
   border-radius:50%;
@@ -490,6 +506,10 @@ img {
     margin: 40px 0 20px 15px;
     font: normal 25px/1 Arial, Helvetica, sans-serif;        
   }
+  .title-auto-moderation {
+    margin: 40px 0 20px 15px;
+    font: normal 25px/1 Arial, Helvetica, sans-serif;        
+  }
   .title-moderation {
     margin: 40px 0 20px 15px;
     font: normal 25px/1 Arial, Helvetica, sans-serif;        
@@ -505,7 +525,7 @@ img {
   .mobile-links {
     width: auto;
     height: auto;
-    top: 0px;
+    top: 10px;
     left: 10px;
     position: relative;
     font: normal 10px/normal Verdana, Geneva, sans-serif;
@@ -513,7 +533,7 @@ img {
     color: rgba(186, 187, 189, 1);
     -o-text-overflow: clip;
     text-overflow: clip;
-    text-align: center;      
+    text-align: center;
   }
   
   .remove-on-mobile {display: none;}

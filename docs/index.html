@@ -30,12 +30,12 @@
 
 <body>
   <div class="navbar remove-on-mobile">
-    <a href="https://triple-cube.xyz/">Home</a>
-    <a class="active" href="https://triple-cube.xyz/docs">Docs</a>
-    <a href="https://triple-cube.xyz/leaderboard">Leaderboard</a>
+    <a href="https://twilightbot.eu/">Home</a>
+    <a class="active" href="https://twilightbot.eu/docs">Docs</a>
+    <a href="https://twilightbot.eu/leaderboard">Leaderboard</a>
     <a href="https://discordbots.org/bot/349966335352242187" target="_blank">DiscordBots</a>      
     <a href="https://patreon.com/Ishidres" target="_blank">Patreon</a>
-    <a href="https://triple-cube.xyz/ishidres" target="_blank">Ishidres</a>
+    <a href="https://twilightbot.eu/ishidres" target="_blank">Ishidres</a>
   </div>
 
   <div class="register">
@@ -47,12 +47,17 @@
     <div class="index-txt"><a href="#regular">1. <u>Regular Commands</u></a></div>
     <div class="index-txt"><a href="#nsfw">2. <u>NSFW</u></a></div>    
     <div class="index-txt"><a href="#rpg">3. <u>RPG / Games</u></a></div>
-    <div class="index-txt"><a href="#moderation">4. <u>Moderation</u></a></div>  
-    <div class="index-txt"><a href="#administration">5. <u>Setup / Configuration</u></a></div>
-    <div class="index-txt"><a href="#modules">6. <u>Modules / Commands Setup</u></a></div>
+    <div class="index-txt"><a href="#auto-moderation">4. <u>Auto Moderation</u></a></div>    
+    <div class="index-txt"><a href="#moderation">5. <u>Moderation</u></a></div>  
+    <div class="index-txt"><a href="#administration">6. <u>Setup / Configuration</u></a></div>
+    <div class="index-txt"><a href="#modules">7. <u>Modules / Commands Setup</u></a></div>
 
     <div class="recent-header"><u>Recent Changes:</u></div>
     <div class="recent-txt">
+      - renamed ,yandere command to ,hentai<br>
+      - added auto-moderation category with no content, yet<br>
+      - renamed every triple-cube.xyz link to twilightbot.eu<br>
+      - some mobile style fixes<br>
       - added claim-role-reward command<br>
       - added translate command<br>
       - updated work command description<br>
@@ -126,7 +131,7 @@
       <div class="fadeout"></div>
     </div>
 
-    <div class="index-patreon"><a href="https://patreon.com/Ishidres" target="blank_"><img src="https://triple-cube.xyz/docs/img/patron.png"></a></div>             
+    <div class="index-patreon"><a href="https://patreon.com/Ishidres" target="blank_"><img src="https://twilightbot.eu/docs/img/patron.png"></a></div>             
   </div>
 
   <div class="widget">
@@ -138,17 +143,18 @@
     
     <div class="circle"></div>
 
-    <a class="btn" href="https://triple-cube.xyz/invite/" target="blank_">Add @Twilight!</a>
+    <a class="btn" href="https://twilightbot.eu/invite/" target="blank_">Add @Twilight!</a>
     <p class="subtext"><b>Share the Magic and invite me!</b></p>
   </div>
 
   <div class="cmds">
-    <div class="mobile-links">
+  <div class="mobile-links">
       <a href="https://discord.gg/kGj4Gz" target="blank_"><u>Discord Server</u></a>
-      – <a href="https://triple-cube.xyz/invite" target="blank_"><u>Invite Twilight</u></a>
+      – <a href="https://twilightbot.eu/invite" target="blank_"><u>Invite Twilight</u></a>
       – <a href="https://github.com/Ishidres/Twilight-Sparkle-Documentation" target="blank_"><u>GitHub</u></a>      
       – <a href="https://patreon.com/Ishidres" target="blank_"><u>Patreon</u></a>
     </div>
+
     <div class="heading"><img src="img/heading.png">
       <div class="heading-github">
         <a href="https://discordbots.org/bot/349966335352242187">
@@ -249,7 +255,7 @@
     <div class="cmd">e621/rule34/r &#60;tag(s)&#62; [min. score] [rating] [post count (1-320)]</div>
     <div class="p">Searches on e621.net. Minimum Score, amount of posts to search for and a rating (S/Q/E) are optional. Can search for more than one tag or can be replaced through a star (*) to search for any tag. Can also be used in non-nsfw channels, but will only show safe posts.</div>
 
-    <div class="cmd">yandere/y &#60;tag(s)&#62; [min. score] [rating] [post count (1-320)]</div>
+    <div class="cmd">hentai/yandere/y &#60;tag(s)&#62; [min. score] [rating] [post count (1-320)]</div>
     <div class="p">Searches on yande.re. Minimum Score, amount of posts to search for and a rating (S/Q/E) are optional. Can search for more than one tag or can be replaced through a star (*) to search for any tag. Can also be used in non-nsfw channels, but will only show safe posts.</div>
 
     <div class="cmd">derpi/d &#60;tag(s)&#62; [min. score] [rating] [post count (1-320)]</div>
@@ -321,7 +327,11 @@
     <div class="p">Users can claim missing role rewards in servers where level role rewards have been set up. If executed the bot will give the user their latest missing role reward according to their current level.</div class="p">
 
 
-    <div class="title-moderation" id="moderation">4. Moderation</div>
+    <div class="title-auto-moderation" id="auto-moderation">4. Auto Moderation</div>
+    <div class="p">Auto Moderation makes the bot listen to specific events (e.g. posting invite links, mass mentioning, etc.) and gives the specific users strikes. If a user reaches a specific amount of strikes they can get warned, muted, kicked, banned, completely unroled, etc. Also, strikes can expire after a specific time.</div>
+
+
+    <div class="title-moderation" id="moderation">5. Moderation</div>
 
 
     <div class="cmd">kick/k &#60;user&#62; [reason]</div>
@@ -355,7 +365,7 @@
     <div class="p">Deletes a specific amount of messages (max.: 1000) from every user or just a specific user in the channel. (Required Permission: Manage Messages)</div class="p">
 
 
-    <div class="title-administration" id="administration">5. Setup / Configuration</div>    
+    <div class="title-administration" id="administration">6. Setup / Configuration</div>    
 
 
     <div class="cmd">addrank/addrole &#60;rank name&#62;</div>
@@ -446,7 +456,7 @@
     <div class="p">Enables Server Logs in the current channel. Twilight will start logging important Events such as Bans, Kicks, Warnings, Cleares, etc. Use '-1' or 'disable' as the first argument to disable Server Logs. (Requires: Administrator Permission)</div>
 
 
-    <div class="title-modules" id="modules">6. Modules / Command Setup</div>    
+    <div class="title-modules" id="modules">7. Modules / Command Setup</div>    
 
     
     <div class="cmd">disable-module &#60;module&#62;</div>
