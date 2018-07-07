@@ -54,7 +54,10 @@
 
     <div class="recent-header"><u>Recent Changes:</u></div>
     <div class="recent-txt">
-      - renamed ,yandere command to ,hentai<br>
+      - updated announce command description<br>
+      - updated rule34, hentai and derpibooru command description<br>
+      - updated set-join-msg command description<br>
+      - renamed yandere command to hentai<br>
       - added auto-moderation category with no content, yet<br>
       - renamed every triple-cube.xyz link to twilightbot.eu<br>
       - some mobile style fixes<br>
@@ -253,13 +256,13 @@
 
 
     <div class="cmd">e621/rule34/r &#60;tag(s)&#62; [min. score] [rating] [post count (1-320)]</div>
-    <div class="p">Searches on e621.net. Minimum Score, amount of posts to search for and a rating (S/Q/E) are optional. Can search for more than one tag or can be replaced through a star (*) to search for any tag. Can also be used in non-nsfw channels, but will only show safe posts.</div>
+    <div class="p">Searches on e621.net. Minimum Score, amount of posts to search for and a rating (S/Q/E) are optional. Can search for more than one tag or can be replaced through a star (*) to search for any tag. Can also be used in non-nsfw channels, but will only show safe posts. The bot automatically filters posts containing content which is against Discord's TOS.</div>
 
     <div class="cmd">hentai/yandere/y &#60;tag(s)&#62; [min. score] [rating] [post count (1-320)]</div>
-    <div class="p">Searches on yande.re. Minimum Score, amount of posts to search for and a rating (S/Q/E) are optional. Can search for more than one tag or can be replaced through a star (*) to search for any tag. Can also be used in non-nsfw channels, but will only show safe posts.</div>
+    <div class="p">Searches on yande.re. Minimum Score, amount of posts to search for and a rating (S/Q/E) are optional. Can search for more than one tag or can be replaced through a star (*) to search for any tag. Can also be used in non-nsfw channels, but will only show safe posts. The bot automatically filters posts containing content which is against Discord's TOS.</div>
 
     <div class="cmd">derpi/d &#60;tag(s)&#62; [min. score] [rating] [post count (1-320)]</div>
-    <div class="p">Searches on derpibooru.org. Minimum Score, amount of posts to search for and a rating (S/Q/E) are optional. Can search for more than one tag or can be replaced through a star (*) to search for any tag. If used in non-nsfw channels, it will only show safe posts.</div>
+    <div class="p">Searches on derpibooru.org. Minimum Score, amount of posts to search for and a rating (S/Q/E) are optional. Can search for more than one tag or can be replaced through a star (*) to search for any tag. If used in non-nsfw channels, it will only show safe posts. The bot automatically filters posts containing content which is against Discord's TOS.</div>
 
     <div class="cmd">anonymous &#60;enable/disable&#62;</div>
     <div class="p">If enabled, the bot will automatically remove the users message, in which they searched for Rule34, Derpibooru or Yandere to keep them anonymous.</div>
@@ -381,7 +384,7 @@
     <div class="p">Sends a specific message to the user in DM which just joined the server! Usable tags are: {username} {user mention} {server name} {member count}, which are getting replaced by their respective value. Set the message to -1 to disable sending it. (Requires: Administrator Permission)</div class="p">
 
     <div class="cmd">set-join-msg &#60;msg&#62;</div>
-    <div class="p">Sends a specific message to the current channel with an awesome gif when a user joins the server! Usable tags are: {username} {user mention} {server name} {member count}, which are getting replaced by their respective value. Set the message to -1 to disable sending it. (Requires: Administrator Permission)</div class="p">
+    <div class="p">Sends a specific message to the current channel with an awesome gif when a user joins the server! Usable tags are: {username} {user mention} {server name} {member count}, which are getting replaced by their respective value. Gifs can be disabled by adding `-no-gif` as the first argument after the command. Set the message to -1 to disable sending it. (Requires: Administrator Permission)</div class="p">
 
     <div class="cmd">set-leave-msg &#60;msg&#62;</div>
     <div class="p">Sends a specific message to the current channel when a user leaves the server! Usable tags are: {username} {user mention} {server name} {member count}, which are getting replaced by their respective value. Set the message to -1 to disable sending it. (Requires: Administrator Permission)</div class="p">
@@ -429,7 +432,7 @@
     <div class="p">Stops the Auto-Clear in this channel. (Required Permission: Administrator)</div class="p">  
 
     <div class="cmd">announce [delay (0-20160)] &#60;message&#62;</div>
-    <div class="p">Announce a message through the bot in the announcements channel. Announcement can be scheduled in minutes (up to 20160 minutes (14 days)). You can only schedule one announcement! (Required Permission: Administrator)</div class="p">
+    <div class="p">Announces a message through the bot in the announcements channel. Announcement can be scheduled in minutes (up to 20160 minutes (14 days)). You can only schedule one announcement! (Requires: Mention Everyone &amp; Manage Messages Permission)</div class="p">
 
     <div class="cmd">dm-announce &#60;message&#62;</div>
     <div class="p">Does a DM Announcement by sending a message to every user in the server. Attention: Users are able to disable DM Announcements, so you shouldn't abuse it. Also, abusing it may lead your account to get Global Blacklisted! (Required Permission: Administrator)</div class="p">
