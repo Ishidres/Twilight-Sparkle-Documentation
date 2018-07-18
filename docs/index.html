@@ -54,6 +54,8 @@
 
     <div class="recent-header"><u>Recent Changes:</u></div>
     <div class="recent-txt">
+      - updated show-level-reward command description<br>
+      - added all steam integration commands<br>
       - updated announce command description<br>
       - updated rule34, hentai and derpibooru command description<br>
       - updated set-join-msg command description<br>
@@ -230,6 +232,15 @@
     <div class="cmd">shortener/short &#60;long link&#62; [custom tag]</div>
     <div class="p">A simple URL Shortener to shorten long links. The custom tag is optional and can be anything which isn't already in use.</div>
 
+    <div class="cmd">steam-user</div>
+    <div class="p">Searches for a specific user on Steam and shows available information about them. The user to search for can be a username, a Steam ID or a user mention to search for their username. You can only search for somebody's username in a custom profile url, as nicknames aren't unique and can be changed.</div>
+
+    <div class="cmd">steam-recently</div>
+    <div class="p">Shows all recently played games by a specifc user on Steam. The user to search for can be a username, a Steam ID or a user mention to search for their username. You can only search for somebody's username in a custom profile url, as nicknames aren't unique and can be changed.</div>
+
+    <div class="cmd">steam-game</div>
+    <div class="p">Shows recent news posts about a specific game on Steam.</div>
+
     <div class="cmd">ragequit</div>
     <div class="p">Makes you leave the server.</div>
 
@@ -329,6 +340,9 @@
     <div class="cmd">claim-role-reward</div>
     <div class="p">Users can claim missing role rewards in servers where level role rewards have been set up. If executed the bot will give the user their latest missing role reward according to their current level.</div class="p">
 
+    <div class="cmd">show-level-reward/list-level-rewards [level number]</div>
+    <div class="p">Either shows all saved level role rewards for this server or just a single one for a specific level.</div class="p">
+
 
     <div class="title-auto-moderation" id="auto-moderation">4. Auto Moderation</div>
     <div class="p">Auto Moderation makes the bot listen to specific events (e.g. posting invite links, mass mentioning, etc.) and gives the specific users strikes. If a user reaches a specific amount of strikes they can get warned, muted, kicked, banned, completely unroled, etc. Also, strikes can expire after a specific time.</div>
@@ -391,9 +405,6 @@
 
     <div class="cmd">auto-role/ar &#60;@role / -1&#62;</div>
     <div class="p">Every user that joins the server will automatically get this role. Replace the role mention through 'disable' or '-1' to disable it. (Requires: Administrator Permission)</div class="p">
-
-    <div class="cmd">show-level-reward/list-level-rewards [level number]</div>
-    <div class="p">Either shows all saved level role rewards for this server or just a single one for a specific level. (Requires: Administrator Permission)</div class="p">
 
     <div class="cmd">add-level-reward &#60;level number&#62; &#60;@role&#62;</div>
     <div class="p">Adds a new level role reward. As soon as the user reaches this specific level, they will automatically receive this role. (Requires: Administrator Permission)</div class="p">
