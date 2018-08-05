@@ -54,6 +54,7 @@
 
     <div class="recent-header"><u>Recent Changes:</u></div>
     <div class="recent-txt">
+      - ,join -> ,about; added recent-changes and redeem command<br>
       - updated show-level-reward command description<br>
       - added all steam integration commands<br>
       - updated announce command description<br>
@@ -253,8 +254,11 @@
     <div class="cmd">add</div>  
     <div class="p">Sends you the invite link, which you can use to add the bot to your server.</div>  
 
-    <div class="cmd">join</div>  
+    <div class="cmd">about</div>  
     <div class="p">Shows you the invite link to the support server, which you can join, either to get support or to help us grow.</div>  
+
+    <div class="cmd">recent-changes</div>
+    <div class="p">Shows the recent commits (changes) in the bot.</div class="p">
 
     <div class="cmd">vote</div>
     <div class="p">Explains which rewards you get for voting and how to vote for the bot.</div>
@@ -336,6 +340,9 @@
 
     <div class="cmd">cases/case open &#60;case-name&#62;</div>
     <div class="p">Lets you open a case. The item you will win depends on the worth of the case you opened. The more worth a case is, the better are the items.</div class="p">
+
+    <div class="cmd">redeem &#60;gift-code&#62;</div>
+    <div class="p">Lets you redeem a specific gift code. If the gift code is valid you get the specific rewards for the gift code.</div class="p">
 
     <div class="cmd">claim-role-reward</div>
     <div class="p">Users can claim missing role rewards in servers where level role rewards have been set up. If executed the bot will give the user their latest missing role reward according to their current level.</div class="p">
@@ -483,7 +490,7 @@
     <div class="p">Shows all disabled modules. (Requires: Administrator Permission)</div>
 
     <div class="cmd">disable-message-type &#60;message type&#62;</div>
-    <div class="p">Disabled Message Types are drop-events, levelups, achievements. Twilight won't send any kind of messages of disabled message types anymore. For example, if drop-events are disabled, no more Random Drop Events will be sent anymore.  (Requires: Administrator Permission)</div>
+    <div class="p">Disabled Message Types are drop-events, levelups, achievements and gem-rewards. Twilight won't send any kind of messages of disabled message types anymore. For example, if drop-events are disabled, no more Random Drop Events will be sent anymore.  (Requires: Administrator Permission)</div>
 
     <div class="cmd">enable-message-type &#60;message type&#62;</div>
     <div class="p">Enables a disabled message type.  (Requires: Administrator Permission)</div>
