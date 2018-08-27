@@ -18,9 +18,7 @@ a {
 }
 
 .mobile-links {
-  bottom: -10px;
-  right: -10px;
-  position: fixed;
+  visibility: hidden;
 }
 
 .register {
@@ -528,12 +526,13 @@ img {
     top: 10px;
     left: 10px;
     position: relative;
-    font: normal 10px/normal Verdana, Geneva, sans-serif;
+    font: normal 3.1vw/normal Verdana, Geneva, sans-serif;
     font-weight: bold;    
     color: rgba(186, 187, 189, 1);
     -o-text-overflow: clip;
     text-overflow: clip;
     text-align: center;
+    visibility: visible;
   }
   
   .remove-on-mobile {display: none;}

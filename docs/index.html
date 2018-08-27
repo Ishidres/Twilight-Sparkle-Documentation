@@ -156,8 +156,8 @@
   </div>
 
   <div class="cmds">
-  <div class="mobile-links">
-      <a href="https://discord.gg/kGj4Gz" target="blank_"><u>Discord Server</u></a>
+    <div class="mobile-links">
+      <a href="https://discord.gg/PHCvBkd" target="blank_"><u>Discord Server</u></a>
       – <a href="https://twilightbot.eu/invite" target="blank_"><u>Invite Twilight</u></a>
       – <a href="https://github.com/Ishidres/Twilight-Sparkle-Documentation" target="blank_"><u>GitHub</u></a>      
       – <a href="https://patreon.com/Ishidres" target="blank_"><u>Patreon</u></a>
@@ -165,14 +165,14 @@
 
     <div class="heading"><img src="img/heading.png">
       <div class="heading-github">
-        <a href="https://discordbots.org/bot/349966335352242187">
-          <img src="https://discordbots.org/api/widget/status/349966335352242187.svg" media="only screen and (max-device-width: 768px)"/>
+        <a href="https://discordbots.org/bot/349966335352242187" media="only screen and (max-device-width: 768px)">
+          <img src="https://discordbots.org/api/widget/status/349966335352242187.svg"/>
         </a>
-        <br> <a href="https://discordbots.org/bot/349966335352242187" >
-          <img src="https://discordbots.org/api/widget/servers/349966335352242187.svg" media="only screen and (max-device-width: 768px)"/>
+        <br> <a href="https://discordbots.org/bot/349966335352242187" media="only screen and (max-device-width: 768px)">
+          <img src="https://discordbots.org/api/widget/servers/349966335352242187.svg"/>
         </a>
-        <br> <a href="https://discordbots.org/bot/349966335352242187">
-          <img src="https://discordbots.org/api/widget/upvotes/349966335352242187.svg" media="only screen and (max-device-width: 768px)"/>
+        <br> <a href="https://discordbots.org/bot/349966335352242187" media="only screen and (max-device-width: 768px)">
+          <img src="https://discordbots.org/api/widget/upvotes/349966335352242187.svg"/>
         </a><br>
         <br> <a class="github-button" href="https://github.com/Ishidres" data-size="large" data-show-count="true" aria-label="Follow @Ishidres on GitHub">Follow @Ishidres</a>
         <br> <a class="github-button" href="https://github.com/Ishidres/Twilight-Sparkle-Documentation" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star on GitHub">Star</a>
@@ -322,7 +322,7 @@
     <div class="cmd">leaderboard &#60;type&#62; [place] [local]</div>
     <div class="p">Shows the leaderboard for a specific type (level / money / items). If the second or third argument is a number, the leaderboard will start counting from the given place. If it is 'local' or 'server', the bot will only list members of the current server in the leaderboard.</div class="p">
       
-    <div class="cmd">work [min (30-960)]</div>
+    <div class="cmd">work [length (e.g. 2h30min)]</div>
     <div class="p">Lets you start working. The longer you work, the more money you get and the more time you have for claiming your reward after you finished your work. If you claim it too late, you will only get a very small reward.</div class="p">
 
     <div class="cmd">slot-machine / slot &#60;bet&#62;</div>
@@ -369,8 +369,8 @@
     <div class="cmd">ban/b &#60;user&#62; [reason]</div>
     <div class="p">Bans a user from this server. Reason mustn't be longer than 467 characters. (Required Permission: Ban Member)</div class="p">
 
-    <div class="cmd">tempban/tb &#60;user&#62; &#60;time in min&#62; [reason]</div>
-    <div class="p">Temporary bans a user from this server. Time has to be given in minutes. Reason mustn't be longer than 421 characters. (Required Permission: Ban Member)</div class="p">
+    <div class="cmd">tempban/tb &#60;user&#62; &#60;length (e.g. 2h30min)&#62; [reason]</div>
+    <div class="p">Temporary bans a user from the server (bans them and unbans them after the specified time). (Requires: Ban Members Permission)</div class="p">
 
     <div class="cmd">hardban/hb &#60;user&#62; &#60;time in min&#62; [reason]</div>
     <div class="p">Similar to softban. Bans a user from the server and deletes all their sent messages. (Required Permission: Ban Member)</div class="p">  
@@ -381,8 +381,8 @@
     <div class="cmd">delete-warnings &#60;user&#62;</div>
     <div class="p">Deletes all the saved warnings of a specific user.</div class="p">
 
-    <div class="cmd">mute &#60;user&#62;</div>
-    <div class="p">Mutes a user on every channel of the server. If a length in minutes for the mute is added as an argument, the bot will automatically unmute the user after the mute has expired. (Requires: Deafen Members Permission)</div class="p">
+    <div class="cmd">mute &#60;@user&#62; [length (e.g. 2h30min)]</div>
+    <div class="p">Mutes a user on every channel of the server. If a length for the mute is added as an argument (e.g. 2h30min), the bot will automatically unmute the user after the mute has expired. (Requires: Deafen Members Permission)</div class="p">
 
     <div class="cmd">unmute &#60;user&#62;</div>
     <div class="p">Unmutes a user. (Requires: Deafen Members Permission)</div class="p">        
@@ -460,8 +460,8 @@
     <div class="cmd">stop-clear</div>
     <div class="p">Stops the Auto-Clear in this channel. (Required Permission: Administrator)</div class="p">  
 
-    <div class="cmd">announce [delay (0-20160)] &#60;message&#62;</div>
-    <div class="p">Announces a message through the bot in the announcements channel. Announcement can be scheduled in minutes (up to 20160 minutes (14 days)). You can only schedule one announcement! (Requires: Mention Everyone &amp; Manage Messages Permission)</div class="p">
+    <div class="cmd">announce [delay (e.g. 2h30min)] &#60;message&#62;</div>
+    <div class="p">Announces a message through the bot in the announcements channel. Announcement can be scheduled by adding a length (e.g. 2h30min) (up to 26280000 minutes (50 years)). You can only schedule one announcement! (Requires: Mention Everyone &amp; Manage Messages Permission)</div class="p">
 
     <div class="cmd">dm-announce &#60;message&#62;</div>
     <div class="p">Does a DM Announcement by sending a message to every user in the server. Attention: Users are able to disable DM Announcements, so you shouldn't abuse it. Also, abusing it may lead your account to get Global Blacklisted! (Required Permission: Administrator) Note: This command has been disabled in v2.5.41 to comply with Discord's TOS.</div class="p">
