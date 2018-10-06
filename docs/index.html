@@ -54,6 +54,11 @@
 
     <div class="recent-header"><u>Recent Changes:</u></div>
     <div class="recent-txt">
+      - added event command<br>
+      - added buy-item command<br>
+      - added daily-shop command<br>
+      - added unban command<br>
+      - updated mute command<br>
       - added ,anime command<br>
       - added ,manga command<br>
       - added ,achievements command<br>
@@ -364,6 +369,15 @@
     <div class="cmd">show-level-reward/list-level-rewards [level number]</div>
     <div class="p">Either shows all saved level role rewards for this server or just a single one for a specific level.</div class="p">
 
+    <div class="cmd">daily-shop</div>
+    <div class="p">Opens the daily shop and shows the available items to buy for today.</div class="p">
+
+    <div class="cmd">buy-item &#60;:item:&#62;</div>
+    <div class="p">Let's you buy a specific item from the daily shop.</div class="p">
+
+    <div class="cmd">event</div>
+    <div class="p">Shows information about the current or the next upcoming global event.</div class="p">
+
 
     <div class="title-auto-moderation" id="auto-moderation">4. Auto Moderation</div>
     <div class="p">Auto Moderation makes the bot listen to specific events (e.g. posting invite links, mass mentioning, etc.) and gives the specific users strikes. If a user reaches a specific amount of strikes they can get warned, muted, kicked, banned, completely unroled, etc. Also, strikes can expire after a specific time.</div>
@@ -387,13 +401,16 @@
     <div class="cmd">hardban/hb &#60;user&#62; &#60;time in min&#62; [reason]</div>
     <div class="p">Similar to softban. Bans a user from the server and deletes all their sent messages. (Required Permission: Ban Member)</div class="p">  
 
+    <div class="cmd">unban &#60;user ID&#62;</div>
+    <div class="p">Unbans a specific user. To specify the user to unban the user ID needs to be given as the first argument. (Requires: Ban Members Permission)</div class="p">   
+
     <div class="cmd">warn/w &#60;user&#62; reason</div>
     <div class="p">Warns a user and saves it. When a user reaches a specific amount of warnings, they will automatically get kicked from the server, if an Admin configured so! (Required Permission: Kick Member)</div class="p">
 
     <div class="cmd">delete-warnings &#60;user&#62;</div>
-    <div class="p">Deletes all the saved warnings of a specific user.</div class="p">
+    <div class="p">Deletes all the saved warnings of a specific user. (Requires: Administrator Permission)</div class="p">
 
-    <div class="cmd">mute &#60;@user&#62; [length (e.g. 2h30min)]</div>
+    <div class="cmd">mute &#60;@user&#62; [length (e.g. 2h30min)] [reason]</div>
     <div class="p">Mutes a user on every channel of the server. If a length for the mute is added as an argument (e.g. 2h30min), the bot will automatically unmute the user after the mute has expired. (Requires: Deafen Members Permission)</div class="p">
 
     <div class="cmd">unmute &#60;user&#62;</div>
