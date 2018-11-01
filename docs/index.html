@@ -54,6 +54,12 @@
 
     <div class="recent-header"><u>Recent Changes:</u></div>
     <div class="recent-txt">
+      - added del-trial-mod-role command<br>
+      - added set-trial-mod-role command<br>
+      - added list-nickname-blacklist command<br>
+      - added nickname-blacklist-remove command<br>
+      - added nickname-blacklist-add command<br>
+      - added max-lines command<br>
       - added event command<br>
       - added buy-item command<br>
       - added daily-shop command<br>
@@ -382,9 +388,26 @@
     <div class="title-auto-moderation" id="auto-moderation">4. Auto Moderation</div>
     <div class="p">Auto Moderation makes the bot listen to specific events (e.g. posting invite links, mass mentioning, etc.) and gives the specific users strikes. If a user reaches a specific amount of strikes they can get warned, muted, kicked, banned, completely unroled, etc. Also, strikes can expire after a specific time.</div>
 
+    <div class="cmd">max-lines &#60;amount (2-2000)&#62; [strikes]</div>
+    <div class="p">Sets the maximum amount of line breaks a message may have to prevent people from spamming your whole server. If a valid amount of strikes is given the user will be punished with this amount of strikes. (Requires: Administrator Permission) (Bypass Permission: Manage Messages)</div class="p">
+
+    <div class="cmd">nickname-blacklist-add  &#60;word&#62; [strikes]</div>
+    <div class="p">Adds a word to the Nickname Blacklist. If a user changes their nickname and a blacklisted word is part of their new nickname, the bot will reset the nickname to their default username (ignores case sensitive). (Requires: Administrator Permission)</div class="p">
+      
+    <div class="cmd">nickname-blacklist-remove  &#60;word&#62; [strikes]</div>
+    <div class="p">Removes a word from the Nickname Blacklist. (Requires: Administrator Permission)</div class="p">
+
+    <div class="cmd">list-nickname-blacklist</div>
+    <div class="p">Lists all words which are part of the Nickname Blacklist. (Requires: Administrator Permission)</div class="p">
+
+    <div class="cmd">set-trial-mod-role &#60;@role&#62; &#60;amount of actions&#62; &#60;amount of time in minutes&#62;</div>
+    <div class="p">Sets a specific role as the new trial mod role. Every user with that role will count as a trial mod. A trial mod can use Twilight's moderation commands even if they don't have the required permissions (such as 'Kick Members', etc.). The restriction is that they can only use a specific amount of mod actions every X minutes. (Requires: Administrator Permission)</div class="p">
+
+    <div class="cmd">del-trial-mod-role &#60;@role&#62; &#60;amount of actions&#62; &#60;amount of time in minutes&#62;</div>
+    <div class="p">Removes the current trial mod role connection and disables the trial mod feature. This doesn't actually delete the role itself, but just removes the connection with the trial mod feature. (Requires: Administrator Permission)</div class="p">
+
 
     <div class="title-moderation" id="moderation">5. Moderation</div>
-
 
     <div class="cmd">kick/k &#60;user&#62; [reason]</div>
     <div class="p">Kicks a user from this server. (Required Permission: Kick Member)</div class="p">
