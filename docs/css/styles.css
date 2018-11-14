@@ -92,7 +92,7 @@ a {
 }
 
 .index-txt {
-  font: normal normal bold 20px/normal "Lucida Console", Monaco, monospace;
+  font: normal normal bold 18px/normal "Lucida Console", Monaco, monospace;
   -o-text-overflow: clip;
   text-overflow: clip;
   width: auto;
@@ -159,6 +159,7 @@ a {
   bottom: 15%;
   width: 92%;
   height: auto;
+  display: block;
   overflow: visible;
   float: none;
   z-index: auto;
@@ -168,6 +169,21 @@ a {
   position: absolute;
   cursor: default;
 }
+
+/*.index-ads {
+  left: 1%;
+  bottom: 10px;
+  right: 83%;
+  height: auto;
+  overflow: visible;
+  float: none;
+  z-index: auto;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  position: absolute;
+  cursor: default;
+}*/
 
 .cmds {
   width: auto;
