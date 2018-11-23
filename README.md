@@ -15,7 +15,7 @@ Want to use my Discord Bot? You can invite it [here](https://twilightbot.eu/invi
 # Examples
 
 Register & Recent Changes (left section):
-```javascript
+```html
 <div class="index">
   <div class="index-header"><a href="#">Go to Top</a></div>
   <div class="index-txt"><a href="#regular">1. <u>Regular Commands</u></a></div>
@@ -32,18 +32,18 @@ Register & Recent Changes (left section):
 ```
 
 Command Title (middle section):
-```javascript
+```html
 <div class="title-regular" id="regular">1. Regular Commands</div>
 ```
 
 Command Explanation (middle section):
-```javascript
+```html
 <div class="cmd">ping</div>
 <div class="p">Checks the bots Message Latency and API Latency.</div class="p">
 ```
 
 Discord Widget & Invite Bot (right section):
-```javascript
+```html
 <div class="widget">
   <iframe src="https://discordapp.com/widget?id=221339079554498561&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
 
