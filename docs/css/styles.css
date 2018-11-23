@@ -466,6 +466,14 @@ img {
   text-align: center;
 }
 
+.ad-banner {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  margin: 35px 0 0 50px;
+}
+
 /* animation */
 @-webkit-keyframes btnWiggle {
     0% {-webkit-transform: rotate(0deg);}
